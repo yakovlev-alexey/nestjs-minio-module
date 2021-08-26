@@ -8,7 +8,7 @@
   ],
   "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
   "license": "MIT",
-  "private": "false",
+  "private": false,
   "repository": {
     "type": "git",
     "directory": "https://github.com/yakovlev-alexey/nestjs-minio"
