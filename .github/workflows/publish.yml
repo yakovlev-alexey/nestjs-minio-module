@@ -2,9 +2,11 @@ name: Publish
 
 on:
   push:
-    tags: 
-      - '[0-9]+.[0-9]+.[0-9]+'
-    
+    branches:
+      - "!*"
+    tags:
+      - "v*"
+
 jobs:
   publish:
     runs-on: ubuntu-latest

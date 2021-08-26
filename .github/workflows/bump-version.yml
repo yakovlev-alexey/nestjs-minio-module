@@ -18,7 +18,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag-prefix: ""
+          tag-prefix: "v"
           minor-wording: "feat,test"
           major-wording: "feat!,BREAKING CHANGES"
           patch-wording: "fix"
