@@ -110,11 +110,11 @@ export class S3Service extends MinioService<S3Options> {
 }
 ```
 
-In case if you need to create a custom constructor you should not forget to pass options to the superclass. You may inject options using `MINIO_CONFIG` symbol provided and exported from the module.
+In case if you need to create a custom constructor you should not forget to pass options to the superclass. You may inject options using `MINIO_OPTIONS` symbol provided and exported from the module.
 
 ```typescript
 import { Injectable, Inject } from "@nestjs/common";
-import { MinioService, MINIO_CONFIG } from "nestjs-minio-module";
+import { MinioService, MINIO_OPTIONS } from "nestjs-minio-module";
 
 import type { MinioModuleOptions } from "nestjs-minio-module";
 
@@ -125,7 +125,7 @@ type S3Options = {
 @Injectable()
 export class S3Service extends MinioService<S3Options> {
   constructor(
-    @Inject(MINIO_CONFIG) options: S3Options /*, additional dependencies */
+    @Inject(MINIO_OPTIONS) options: S3Options /*, additional dependencies */
   ) {
     super(options);
   }
