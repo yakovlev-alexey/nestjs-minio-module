@@ -5,7 +5,9 @@ import type { ClientOptions } from "minio";
 
 import { MINIO_CONFIG } from "./constants";
 
-export class MinioService<T extends ClientOptions> extends Client {
+export class MinioService<
+  T extends ClientOptions = ClientOptions
+> extends Client {
   constructor(@Inject(MINIO_CONFIG) protected readonly options: T) {
     super(options);
   }
