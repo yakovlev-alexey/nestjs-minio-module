@@ -1,6 +1,6 @@
 {
   "name": "nestjs-minio-module",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "The better Nest.js Minio client module",
   "main": "dist/index.js",
   "files": [
