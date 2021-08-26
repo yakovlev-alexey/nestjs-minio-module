@@ -2,9 +2,9 @@ name: Publish
 
 on:
   push:
-    tag: 
-      - *
-
+    tags: 
+      - '*'
+    
 jobs:
   publish:
     runs-on: ubuntu-latest
