@@ -21,7 +21,7 @@
         "format": "prettier --write './**/*.{js,ts}'",
         "lint:types": "tsc --noEmit",
         "prepublish": "yarn build",
-        "postinstall": "husky install"
+        "prepare": "husky install"
     },
     "keywords": [
         "nestjs",
