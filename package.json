@@ -3,9 +3,24 @@
   "version": "1.0.0",
   "description": "The better Nest.js Minio client module",
   "main": "dist/index.js",
+  "files": [
+    "dist/**"
+  ],
   "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
   "license": "MIT",
   "private": "false",
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/yakovlev-alexey/nestjs-minio"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build"
+  },
+  "keywords": [
+    "nestjs",
+    "minio"
+  ],
   "peerDependencies": {
     "@nestjs/common": ">=7.0.0",
     "@nestjs/core": ">=7.0.0",
