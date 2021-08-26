@@ -1,0 +1,9 @@
+{
+  "name": "nestjs-minio",
+  "version": "1.0.0",
+  "description": "The better Nest.js Minio client module",
+  "main": "dist/index.js",
+  "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
+  "license": "MIT",
+  "private": "false"
+}
