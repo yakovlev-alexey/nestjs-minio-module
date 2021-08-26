@@ -207,19 +207,6 @@
     tslib "2.3.0"
     uuid "8.3.2"
 
-"@nestjs/core@^8.0.6":
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.0.6.tgz#ff403a0713f9f7874e3a91ef5416fe6e96872635"
-  integrity sha512-PIGL4TMjVkAsiv5hJinaTx3WdoftYh7pJDwIUQPvRZPLhboGbOJlVapN0Cw5SL7XgNWojQiAsbgLmnGJVDO3Sw==
-  dependencies:
-    "@nuxtjs/opencollective" "0.3.2"
-    fast-safe-stringify "2.0.8"
-    iterare "1.2.1"
-    object-hash "2.2.0"
-    path-to-regexp "3.2.0"
-    tslib "2.3.0"
-    uuid "8.3.2"
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -240,15 +227,6 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
-
-"@nuxtjs/opencollective@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/opencollective/-/opencollective-0.3.2.tgz#620ce1044f7ac77185e825e1936115bb38e2681c"
-  integrity sha512-um0xL3fO7Mf4fDxcqx9KryrB7zgRM5JSlvGN5AGkP6JLM5XEKyjeAiPbNxdXVXQ16isuAhYpvP88NgL2BGd6aA==
-  dependencies:
-    chalk "^4.1.0"
-    consola "^2.15.0"
-    node-fetch "^2.6.1"
 
 "@types/json-schema@^7.0.7":
   version "7.0.9"
@@ -624,11 +602,6 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-consola@^2.15.0:
-  version "2.15.3"
-  resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
-  integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
-
 conventional-changelog-angular@^5.0.11:
   version "5.0.12"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-5.0.12.tgz#c979b8b921cbfe26402eb3da5bbfda02d865a2b9"
@@ -992,11 +965,6 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-
-fast-safe-stringify@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.8.tgz#dc2af48c46cf712b683e849b2bbd446b32de936f"
-  integrity sha512-lXatBjf3WPjmWD6DpIZxkeSsCOwqI0maYMpgDlx8g4U2qi4lbjA9oH/HD2a87G+KfsUmo5WbJFmqBZlPxtptag==
 
 fast-xml-parser@^3.17.5:
   version "3.19.0"
@@ -1767,11 +1735,6 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
-
 normalize-package-data@^2.3.2, normalize-package-data@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
@@ -1818,11 +1781,6 @@ npm-run-path@^4.0.1:
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
-
-object-hash@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.2.0.tgz#5ad518581eefc443bd763472b8ff2e9c2c0d54a5"
-  integrity sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==
 
 object-inspect@^1.11.0, object-inspect@^1.9.0:
   version "1.11.0"
@@ -1959,11 +1917,6 @@ path-parse@^1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
-
-path-to-regexp@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-3.2.0.tgz#fa7877ecbc495c601907562222453c43cc204a5f"
-  integrity sha512-jczvQbCUS7XmS7o+y1aEO9OBVFeZBQ1MDSEqmO7xSoPgOPoowY/SxLpZ6Vh97/8qHZOteiCKb7gkG9gA2ZUxJA==
 
 path-type@^3.0.0:
   version "3.0.0"
