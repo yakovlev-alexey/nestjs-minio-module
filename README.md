@@ -2,6 +2,8 @@
 
 A tiny package to make a bridge between [Nest.js](https://nestjs.com) DI system and [Minio](https://docs.min.io/docs/javascript-client-api-reference.html) client instance.
 
+![](https://img.shields.io/bundlephobia/minzip/nestjs-minio-module?style=social)
+
 ## Table of Contents
 
 - [Nest.js Minio Module](#nestjs-minio-module)
@@ -134,7 +136,7 @@ export class S3Service extends MinioService<S3Options> {
 
 You may ask: how is this package different from a few other implementations of MinIO client in Nest.js?
 
-Firstly, this package properly specifies it's peer dependencies. This means you don't get duplicate packages in your `node_modules` making the package smaller and have support for a greater variety of versions.
+Firstly, this package properly specifies it's peer dependencies. This means you don't get duplicate packages in your `node_modules` making the package smaller and as a bonus have support for a greater variety of versions.
 
 Secondly, `nestjs-minio-module` properly exposes MinIO interface through a service, rather than a service field or a separate injectable.
 
