@@ -12,7 +12,6 @@
     "minio": "^7.0.0"
   },
   "devDependencies": {
-    "@nestjs/cli": "^8.1.1",
     "@nestjs/common": "^8.0.6",
     "@nestjs/core": "^8.0.6",
     "@types/minio": "^7.0.10",

@@ -8,8 +8,6 @@
     "target": "es6",
     "sourceMap": false,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": "./src",
     "skipLibCheck": true
   },
   "include": ["src/**/*.ts"],
