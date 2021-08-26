@@ -19,6 +19,6 @@ type Provider<T> = {
 
 export type MinioOptionsProvider = Provider<MinioModuleOptions>;
 
-export type MinioModuleAsyncOptions = MinioOptionsProvider & {
+export type MinioModuleAsyncOptions = Omit<MinioOptionsProvider, "provide"> & {
   imports: ModuleMetadata["imports"];
 };
