@@ -1,12 +1,12 @@
-# Nest.js Minio Module
+# Nest.js MinIO Module
 
-A tiny package to make a bridge between [Nest.js](https://nestjs.com) DI system and [Minio](https://docs.min.io/docs/javascript-client-api-reference.html) client instance.
+A tiny package to make a bridge between [Nest.js](https://nestjs.com) DI system and [MinIO](https://docs.min.io/docs/javascript-client-api-reference.html) client instance.
 
 ![](https://img.shields.io/bundlephobia/minzip/nestjs-minio-module?style=social)
 
 ## Table of Contents
 
-- [Nest.js Minio Module](#nestjs-minio-module)
+- [Nest.js MinIO Module](#nestjs-minio-module)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -48,7 +48,7 @@ imports: [
 export class AppModule {}
 ```
 
-`MinioModule` may also be registered asynchronously with a factory or a value. Let's imagine we are using a `ConfigService` and want to get Minio options from it. We may do it as follows:
+`MinioModule` may also be registered asynchronously with a factory or a value. Let's imagine we are using a `ConfigService` and want to get MinIO options from it. We may do it as follows:
 
 ```typescript
 import { Module } from '@nestjs/common';
