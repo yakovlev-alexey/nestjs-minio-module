@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-minio",
+  "name": "nestjs-minio-module",
   "version": "1.0.0",
   "description": "The better Nest.js Minio client module",
   "main": "dist/index.js",
