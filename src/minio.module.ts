@@ -11,10 +11,11 @@ import type { MinioModuleAsyncOptions, MinioModuleOptions } from "./types";
 })
 export class MinioModule {
   public static register(options: MinioModuleOptions): DynamicModule {
+    const optionsProvider = this.createOptionsProvider(options);
     return {
       module: MinioModule,
-      providers: [MinioService, this.createOptionsProvider(options)],
-      exports: [MinioService],
+      providers: [MinioService, optionsProvider],
+      exports: [MinioService, optionsProvider],
     };
   }
 
@@ -28,11 +29,12 @@ export class MinioModule {
   }
 
   public static registerAsync(options: MinioModuleAsyncOptions): DynamicModule {
+    const optionsProvider = this.createAsyncOptionsProvider(options);
     return {
       module: MinioModule,
       imports: options.imports || [],
-      providers: [MinioService, this.createAsyncOptionsProvider(options)],
-      exports: [MinioService],
+      providers: [MinioService, optionsProvider],
+      exports: [MinioService, optionsProvider],
     };
   }
 
