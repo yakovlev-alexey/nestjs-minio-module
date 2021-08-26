@@ -1,36 +1,60 @@
 {
-  "name": "nestjs-minio-module",
-  "version": "2.0.0",
-  "description": "The better Nest.js Minio client module",
-  "main": "dist/index.js",
-  "files": [
-    "dist/**"
-  ],
-  "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
-  "license": "MIT",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yakovlev-alexey/nestjs-minio-module"
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepublish": "yarn build"
-  },
-  "keywords": [
-    "nestjs",
-    "minio"
-  ],
-  "peerDependencies": {
-    "@nestjs/common": ">=7.0.0",
-    "@nestjs/core": ">=7.0.0",
-    "minio": "^7.0.0"
-  },
-  "devDependencies": {
-    "@nestjs/common": "^8.0.6",
-    "@nestjs/core": "^8.0.6",
-    "@types/minio": "^7.0.10",
-    "minio": "^7.0.19",
-    "typescript": "^4.3.5"
-  }
+    "name": "nestjs-minio-module",
+    "version": "2.0.0",
+    "description": "The better Nest.js Minio client module",
+    "main": "dist/index.js",
+    "files": [
+        "dist/**"
+    ],
+    "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yakovlev-alexey/nestjs-minio-module"
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf build",
+        "lint": "npm-run-all lint:*",
+        "lint:scripts": "eslint './**/*.{js,ts}'",
+        "format": "prettier --write './**/*.{js,ts}'",
+        "lint:types": "tsc --noEmit",
+        "prepublish": "yarn build",
+        "postinstall": "husky install"
+    },
+    "keywords": [
+        "nestjs",
+        "minio",
+        "aws",
+        "s3"
+    ],
+    "peerDependencies": {
+        "@nestjs/common": ">=7.0.0",
+        "@nestjs/core": ">=7.0.0",
+        "minio": "^7.0.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@nestjs/common": "^8.0.6",
+        "@nestjs/core": "^8.0.6",
+        "@types/minio": "^7.0.10",
+        "@typescript-eslint/eslint-plugin": "^4.29.3",
+        "@typescript-eslint/parser": "^4.29.3",
+        "eslint": "^7.32.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.1.2",
+        "minio": "^7.0.19",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx,ts,tsx}": [
+            "prettier --write --loglevel warn './**/*.{js,ts}'",
+            "eslint --fix './**/*.{js,ts}'"
+        ]
+    }
 }
