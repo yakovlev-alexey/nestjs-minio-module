@@ -3,7 +3,7 @@ import { DynamicModule, Module, Provider } from "@nestjs/common";
 import { MINIO_CONFIG } from "./constants";
 import { MinioService } from "./minio.service";
 
-import type { MinioModuleOptions } from "./types";
+import type { MinioModuleAsyncOptions, MinioModuleOptions } from "./types";
 
 @Module({
   providers: [MinioService],
@@ -25,5 +25,27 @@ export class MinioModule {
       provide: MINIO_CONFIG,
       useValue: options,
     };
+  }
+
+  public static registerAsync(options: MinioModuleAsyncOptions): DynamicModule {
+    return {
+      module: MinioModule,
+      imports: options.imports || [],
+      providers: [MinioService, this.createAsyncOptionsProvider(options)],
+      exports: [MinioService],
+    };
+  }
+
+  private static createAsyncOptionsProvider(
+    options: MinioModuleAsyncOptions
+  ): Provider<MinioModuleOptions> {
+    if (!options.useFactory || !options.useExisting || !options.useValue) {
+      throw new Error("MinioModule registerAsync options require a provider");
+    }
+
+    return {
+      provide: MINIO_CONFIG,
+      ...options,
+    } as Provider<MinioModuleOptions>;
   }
 }
