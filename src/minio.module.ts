@@ -39,7 +39,7 @@ export class MinioModule {
   private static createAsyncOptionsProvider(
     options: MinioModuleAsyncOptions
   ): Provider<MinioModuleOptions> {
-    if (!options.useFactory || !options.useExisting || !options.useValue) {
+    if (!options.useFactory && !options.useExisting && !options.useValue) {
       throw new Error("MinioModule registerAsync options require a provider");
     }
 
