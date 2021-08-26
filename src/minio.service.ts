@@ -3,12 +3,12 @@ import { Inject } from "@nestjs/common";
 
 import type { ClientOptions } from "minio";
 
-import { MINIO_CONFIG } from "./constants";
+import { MINIO_OPTIONS } from "./constants";
 
 export class MinioService<
   T extends ClientOptions = ClientOptions
 > extends Client {
-  constructor(@Inject(MINIO_CONFIG) protected readonly options: T) {
+  constructor(@Inject(MINIO_OPTIONS) protected readonly options: T) {
     super(options);
   }
 }

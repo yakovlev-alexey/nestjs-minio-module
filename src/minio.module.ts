@@ -1,6 +1,6 @@
 import { DynamicModule, Module, Provider } from "@nestjs/common";
 
-import { MINIO_CONFIG } from "./constants";
+import { MINIO_OPTIONS } from "./constants";
 import { MinioService } from "./minio.service";
 
 import type { MinioModuleAsyncOptions, MinioModuleOptions } from "./types";
@@ -23,7 +23,7 @@ export class MinioModule {
     options: MinioModuleOptions
   ): Provider<MinioModuleOptions> {
     return {
-      provide: MINIO_CONFIG,
+      provide: MINIO_OPTIONS,
       useValue: options,
     };
   }
@@ -46,7 +46,7 @@ export class MinioModule {
     }
 
     return {
-      provide: MINIO_CONFIG,
+      provide: MINIO_OPTIONS,
       ...options,
     } as Provider<MinioModuleOptions>;
   }
