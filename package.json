@@ -4,7 +4,9 @@
     "description": "The better Nest.js Minio client module",
     "main": "dist/index.js",
     "files": [
-        "dist/**"
+        "dist/**",
+        "README.md",
+        "LICENSE"
     ],
     "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
     "license": "MIT",
@@ -15,12 +17,12 @@
     },
     "scripts": {
         "build": "tsc",
-        "clean": "rm -rf build",
+        "clean": "rm -rf dist",
         "lint": "npm-run-all lint:*",
         "lint:scripts": "eslint './**/*.{js,ts}'",
         "format": "prettier --write './**/*.{js,ts}'",
         "lint:types": "tsc --noEmit",
-        "prepublish": "yarn build",
+        "prepublish": "yarn clean && yarn build",
         "prepare": "husky install"
     },
     "keywords": [
